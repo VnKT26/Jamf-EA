@@ -4,7 +4,7 @@
 EA_Function(){
 
 #List all Users
-Users_homefolders="$(/bin/ls /Users/ | grep -v '.localized' | grep -v 'root' | grep -v 'adoa-administrator' | grep -v 'casperadmin' | grep -v 'Shared' | grep -v 'administrator'| grep -v 'parks-administrator' | grep -v 'Guest' | grep -v 'Library' | grep -v 'xahome')"
+Users_homefolders="$(/bin/ls /Users/ | grep -v '.localized' | grep -v 'root' | grep -v '<IT_ACCOUNT_NAME>' | grep -v 'Shared' | grep -v 'Guest')"
 
 
 
@@ -41,4 +41,4 @@ done
 #########################################################
 result="`EA_Function`"
 echo "<result>$result</result>"
-exit 0		## Success
+exit 0		
